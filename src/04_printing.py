@@ -12,6 +12,8 @@ z = "I like turtles!"
 # y, and z:
 # x is 10, y is 2.25, z is "I like turtles!"
 
+print("Printf opperator: ", "%d, %f, %s" %(x,y,z) )
 # Use the 'format' string method to print the same thing
 
+print("Format string Method: ", str.format(str(x)), str.format(str(y)), z)
 # Finally, print the same thing using an f-string
