@@ -5,7 +5,9 @@
 x = 12
 
 def change_x():
+    global x
     x = 99
+    return print('X is: ', x)
 
 change_x()
 
@@ -17,14 +19,14 @@ print(x)
 
 def outer():
     y = 120
-
+    print('outer var y: ', y)
     def inner():
         y = 999
-
+        print('inner var y: ', y)
     inner()
 
     # This prints 120. What do we have to change in inner() to get it to print
     # 999? Google "python nested function scope".
-    print(y)
+    print('Global var y: ', y)
 
 outer()
